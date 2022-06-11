@@ -1,0 +1,21 @@
+[user]
+	name = 佐伯知則/日立
+	email = tomonori.saeki.nk@hitachi.com
+[http]
+	proxy = http://10173303:YuZrCM_aX3kP6Uu@obprx01.intra.hitachi.co.jp:8080
+[merge]
+	ff = false
+[pull]
+	ff = only
+	rebase = false
+[commit]
+	template = F:\\.commit.template
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = master
+[core]
+	autocrlf = false
